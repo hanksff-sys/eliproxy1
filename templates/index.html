@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eli Proxy — Internet e Streaming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/planos-cards.css') }}" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-vivo">eli</span>
+        <span class="logo-tag">proxy</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#internet">Internet</a></li>
+        <li><a href="#streaming">Streaming</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/98988330665" target="_blank" class="nav-cta">Contratar agora</a>
+    </div>
+  </nav>
+
+  <!-- TABS DE CATEGORIA -->
+  <div class="category-tabs">
+    <div class="tabs-container">
+      <button class="tab-btn active" data-tab="internet">
+        <i class="fas fa-wifi"></i> Internet
+      </button>
+      <button class="tab-btn" data-tab="streaming">
+        <i class="fas fa-tv"></i> Streaming
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================
+       SEÇÃO 1: INTERNET
+       ======================================== -->
+  <div class="tab-content active" id="internet">
+
+    <!-- HERO INTERNET -->
+    <section class="hero" id="internet">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="badge-operadora">
+          <i class="fas fa-signal"></i> Vivo
+        </div>
+        <h1 class="hero-title">
+          Internet que<br /><span class="highlight">não para.</span>
+        </h1>
+        <p class="hero-subtitle">
+          O plano ideal para quem usa muito e não quer surpresas na conta.
+        </p>
+        <div class="plan-card">
+          <div class="plan-card-header">
+            <div class="wifi-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <div class="plan-data">
+              <span class="gb">500GB</span>
+              <span class="ilimitado">ILIMITADOS</span>
+            </div>
+          </div>
+          <div class="plan-info-list">
+            <div class="plan-info-item">
+              <i class="fas fa-circle-info"></i>
+              <span>Após consumo da franquia, navegue ilimitado em velocidade reduzida.</span>
+            </div>
+            <div class="plan-info-item">
+              <i class="fas fa-clock"></i>
+              <span>Sem permanência mínima</span>
+            </div>
+          </div>
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="price">85,00</span>
+            <span class="period">/mês</span>
+          </div>
+          <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar">
+            <i class="fab fa-whatsapp"></i> Quero contratar
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-status-bar">
+              <span>9:41</span>
+              <div class="phone-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-three-quarters"></i>
+              </div>
+            </div>
+            <div class="phone-content">
+              <div class="phone-speed">
+                <div class="speed-circle">
+                  <span class="speed-num">500</span>
+                  <span class="speed-unit">GB</span>
+                </div>
+              </div>
+              <div class="phone-bar-wrap">
+                <div class="phone-bar-label"><span>Franquia</span><span>500 GB</span></div>
+                <div class="phone-bar"><div class="phone-bar-fill"></div></div>
+              </div>
+              <div class="phone-apps">
+                <div class="app-icon wpp"><i class="fab fa-whatsapp"></i></div>
+                <div class="app-icon ig"><i class="fab fa-instagram"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE PLANOS EM CARDS -->
+    <section class="planos-cards-section">
+      <div class="section-container">
+        <h2 class="section-title">Nossos <span class="highlight">Planos</span> de Internet</h2>
+        <p class="section-subtitle">Escolha o plano que melhor se adequa ao seu uso. Todos com navegação ilimitada após o consumo da franquia.</p>
+        <div class="planos-cards-grid">
+          <!-- Plano Básico -->
+          <div class="plano-card">
+            <div class="plano-header">
+              <div class="plano-icon">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <div class="plano-info">
+                <span class="plano-nome">Básico</span>
+                <span class="plano-gb">20GB</span>
+              </div>
+            </div>
+            <div class="plano-features">
+              <p><i class="fas fa-check"></i> Navegação ilimitada após franquia</p>
+              <p><i class="fas fa-check"></i> Sem permanência mínima</p>
+              <p><i class="fas fa-check"></i> Suporte dedicado</p>
+            </div>
+            <div class="plano-price">
+              <span class="currency">R$</span>
+              <span class="price">51,00</span>
+              <span class="period">/mês</span>
+            </div>
+            <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-plano">
+              <i class="fab fa-whatsapp"></i> Contratar
+            </a>
+          </div>
+
+          <!-- Plano Intermediário -->
+          <div class="plano-card">
+            <div class="plano-header">
+              <div class="plano-icon">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <div class="plano-info">
+                <span class="plano-nome">Intermediário</span>
+                <span class="plano-gb">40GB</span>
+              </div>
+            </div>
+            <div class="plano-features">
+              <p><i class="fas fa-check"></i> Navegação ilimitada após franquia</p>
+              <p><i class="fas fa-check"></i> Sem permanência mínima</p>
+              <p><i class="fas fa-check"></i> Suporte dedicado</p>
+            </div>
+            <div class="plano-price">
+              <span class="currency">R$</span>
+              <span class="price">56,00</span>
+              <span class="period">/mês</span>
+            </div>
+            <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-plano">
+              <i class="fab fa-whatsapp"></i> Contratar
+            </a>
+          </div>
+
+          <!-- Plano Premium -->
+          <div class="plano-card">
+            <div class="plano-header">
+              <div class="plano-icon">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <div class="plano-info">
+                <span class="plano-nome">Premium</span>
+                <span class="plano-gb">80GB</span>
+              </div>
+            </div>
+            <div class="plano-features">
+              <p><i class="fas fa-check"></i> Navegação ilimitada após franquia</p>
+              <p><i class="fas fa-check"></i> Sem permanência mínima</p>
+              <p><i class="fas fa-check"></i> Suporte dedicado</p>
+            </div>
+            <div class="plano-price">
+              <span class="currency">R$</span>
+              <span class="price">61,00</span>
+              <span class="period">/mês</span>
+            </div>
+            <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-plano">
+              <i class="fab fa-whatsapp"></i> Contratar
+            </a>
+          </div>
+
+          <!-- Plano Mega -->
+          <div class="plano-card">
+            <div class="plano-header">
+              <div class="plano-icon">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <div class="plano-info">
+                <span class="plano-nome">Mega</span>
+                <span class="plano-gb">100GB</span>
+              </div>
+            </div>
+            <div class="plano-features">
+              <p><i class="fas fa-check"></i> Navegação ilimitada após franquia</p>
+              <p><i class="fas fa-check"></i> Sem permanência mínima</p>
+              <p><i class="fas fa-check"></i> Suporte dedicado</p>
+            </div>
+            <div class="plano-price">
+              <span class="currency">R$</span>
+              <span class="price">66,00</span>
+              <span class="period">/mês</span>
+            </div>
+            <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-plano">
+              <i class="fab fa-whatsapp"></i> Contratar
+            </a>
+          </div>
+
+          <!-- Plano Ultra (Destaque) -->
+          <div class="plano-card plano-destaque">
+            <div class="plano-badge">Mais Popular</div>
+            <div class="plano-header">
+              <div class="plano-icon">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <div class="plano-info">
+                <span class="plano-nome">Ultra</span>
+                <span class="plano-gb">500GB</span>
+              </div>
+            </div>
+            <div class="plano-features">
+              <p><i class="fas fa-check"></i> Navegação ilimitada após franquia</p>
+              <p><i class="fas fa-check"></i> Sem permanência mínima</p>
+              <p><i class="fas fa-check"></i> Suporte dedicado</p>
+            </div>
+            <div class="plano-price">
+              <span class="currency">R$</span>
+              <span class="price">85,00</span>
+              <span class="period">/mês</span>
+            </div>
+            <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-plano btn-destaque">
+              <i class="fab fa-whatsapp"></i> Contratar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="beneficios" id="beneficios">
+      <div class="section-container">
+        <h2 class="section-title">Por que escolher este plano?</h2>
+        <p class="section-subtitle">Tudo que você precisa em um único plano sem complicação.</p>
+        <div class="cards-grid">
+          <div class="card-benefit">
+            <div class="card-icon purple">
+              <i class="fas fa-infinity"></i>
+            </div>
+            <h3>Navegação Ilimitada</h3>
+            <p>Após os 500GB, continue navegando sem interrupções em velocidade reduzida, sem custo extra.</p>
+          </div>
+          <div class="card-benefit">
+            <div class="card-icon green">
+              <i class="fas fa-lock-open"></i>
+            </div>
+            <h3>Sem Fidelidade</h3>
+            <p>Sem permanência mínima. Você tem total liberdade para cancelar quando quiser.</p>
+          </div>
+          <div class="card-benefit">
+            <div class="card-icon blue">
+              <i class="fas fa-mobile-screen"></i>
+            </div>
+            <h3>Apps Gratuitos</h3>
+            <p>WhatsApp e Instagram não consomem sua franquia de dados.</p>
+          </div>
+          <div class="card-benefit">
+            <div class="card-icon orange">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Suporte Dedicado</h3>
+            <p>Atendimento rápido e personalizado via WhatsApp, e-mail ou redes sociais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPS SEM FRANQUIA -->
+    <section class="apps-section">
+      <div class="section-container">
+        <h2 class="section-title">Apps que <span class="highlight">não consomem</span> franquia</h2>
+        <p class="section-subtitle">Use seus apps favoritos à vontade, sem gastar nada da sua franquia.</p>
+        <div class="apps-grid">
+          <div class="app-pill wpp-pill">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </div>
+          <div class="app-pill ig-pill">
+            <i class="fab fa-instagram"></i> Instagram
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========================================
+       SEÇÃO 2: STREAMING
+       ======================================== -->
+  <div class="tab-content" id="streaming">
+
+    <!-- HERO STREAMING -->
+    <section class="hero-streaming">
+      <div class="streaming-bg"></div>
+      <div class="streaming-container">
+        <div class="streaming-image">
+          <img src="{{ url_for('static', filename='img/streaming-hero.jpg') }}" alt="Streaming Liberado" />
+        </div>
+        <div class="streaming-content">
+          <div class="badge-streaming">
+            <i class="fas fa-play-circle"></i> Streaming Liberado
+          </div>
+          <h1 class="streaming-title">
+            Tudo liberado<br />na sua <span class="highlight">Smart TV!</span>
+          </h1>
+          <p class="streaming-subtitle">
+            Acesso a todos os canais e streamings em um único app. Filmes, séries, esportes e muito mais.
+          </p>
+          
+          <div class="streaming-plan-card">
+            <div class="streaming-features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Todos os streamings liberados</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Canais de TV ao vivo</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Sem anúncios</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Compatível com Smart TV, Roku, Android e iOS</span>
+              </div>
+            </div>
+
+            <div class="streaming-price">
+              <span class="currency">R$</span>
+              <span class="price">20,00</span>
+              <span class="period">/mês</span>
+            </div>
+
+            <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-streaming">
+              <i class="fab fa-whatsapp"></i> Teste grátis agora
+            </a>
+          </div>
+
+            <p class="streaming-note">Teste grátis por 2 horas, sem compromisso!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STREAMINGS DISPONÍVEIS -->
+    <section class="streamings-list">
+      <div class="section-container">
+        <h2 class="section-title">Todos os <span class="highlight">Streamings</span> em um só lugar</h2>
+        <p class="section-subtitle">Acesso completo a todas as plataformas de entretenimento.</p>
+        
+        <div class="streamings-grid">
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Netflix</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Disney+</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Globoplay</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Prime Video</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>HBO Max</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Paramount+</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Apple TV+</span>
+          </div>
+          <div class="streaming-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Canais ao Vivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANAIS DISPONÍVEIS -->
+    <section class="canais-section">
+      <div class="section-container">
+        <h2 class="section-title">Canais de <span class="highlight">TV</span> Liberados</h2>
+        <p class="section-subtitle">Acesso a centenas de canais de TV ao vivo, 24h por dia.</p>
+        
+        <div class="canais-grid">
+          <div class="canal-pill">Telecine</div>
+          <div class="canal-pill">Animal Planet</div>
+          <div class="canal-pill">Discovery Kids</div>
+          <div class="canal-pill">AXN</div>
+          <div class="canal-pill">ESPN</div>
+          <div class="canal-pill">Globo</div>
+          <div class="canal-pill">SBT</div>
+          <div class="canal-pill">Record</div>
+          <div class="canal-pill">Band</div>
+          <div class="canal-pill">TNT</div>
+          <div class="canal-pill">Cartoon Network</div>
+          <div class="canal-pill">BBC News</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="section-container">
+      <h2 class="section-title">Entre em <span class="highlight">contato</span></h2>
+      <p class="section-subtitle">Fale conosco pelo canal de sua preferência. Atendimento rápido e sem burocracia.</p>
+      <div class="contato-grid">
+
+        <!-- Card WhatsApp -->
+        <a href="https://wa.me/98988330665" target="_blank" class="contato-card wpp-card">
+          <div class="contato-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="contato-info">
+            <span class="contato-label">WhatsApp</span>
+            <span class="contato-value">(98) 98833-0665</span>
+          </div>
+          <i class="fas fa-arrow-right contato-arrow"></i>
+        </a>
+
+        <!-- Card Telefone -->
+        <a href="tel:+5598988330665" class="contato-card tel-card">
+          <div class="contato-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contato-info">
+            <span class="contato-label">Telefone / Ligação</span>
+            <span class="contato-value">(98) 98833-0665</span>
+          </div>
+          <i class="fas fa-arrow-right contato-arrow"></i>
+        </a>
+
+        <!-- Card E-mail -->
+        <a href="mailto:hanksff@gmail.com" class="contato-card email-card">
+          <div class="contato-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contato-info">
+            <span class="contato-label">E-mail</span>
+            <span class="contato-value">hanksff@gmail.com</span>
+          </div>
+          <i class="fas fa-arrow-right contato-arrow"></i>
+        </a>
+
+        <!-- Card Instagram -->
+        <a href="https://www.instagram.com/eliproxy?igsh=OHFxbnowYmo3ZGpw" target="_blank" class="contato-card ig-card">
+          <div class="contato-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="contato-info">
+            <span class="contato-label">Instagram</span>
+            <span class="contato-value">@eliproxy</span>
+          </div>
+          <i class="fas fa-arrow-right contato-arrow"></i>
+        </a>
+
+      </div>
+
+      <!-- CTA final -->
+      <div class="cta-final">
+        <h3>Pronto para contratar?</h3>
+        <p>Fale agora pelo WhatsApp e ative seu plano em minutos.</p>
+        <a href="https://wa.me/98988330665" target="_blank" class="btn-wpp-final">
+          <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-vivo">eli</span>
+        <span class="logo-tag">proxy</span>
+      </div>
+      <p class="footer-text">
+        Eli Proxy &mdash; Internet 500GB + Streaming Liberado
+      </p>
+      <div class="footer-social">
+        <a href="https://wa.me/98988330665" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/eliproxy?igsh=OHFxbnowYmo3ZGpw" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Eli Proxy. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

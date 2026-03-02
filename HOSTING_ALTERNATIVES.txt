@@ -1,0 +1,25 @@
+Alternativas de Hospedagem para Eli Proxy (Flask):
+
+1. PythonAnywhere:
+   - Focado 100% em Python/Flask/Django.
+   - Muito simples: você faz o upload do arquivo e ele configura o servidor WSGI.
+   - Domínio personalizado disponível no plano "Hacker" ($5/mês).
+   - Ótimo para quem não quer lidar com Docker ou configurações complexas de servidor.
+
+2. Hospedagem Compartilhada (cPanel + Python Selector):
+   - Provedores como Hostinger, HostGator ou Locaweb (planos que suportam Python).
+   - Usa o "Setup Python App" no cPanel.
+   - Vantagem: Você já tem o domínio e e-mail profissional no mesmo painel.
+   - Ideal para quem já tem um plano de hospedagem de sites comum.
+
+3. VPS (Virtual Private Server - DigitalOcean, Linode, AWS Lightsail):
+   - Você aluga um "computador na nuvem" (Ubuntu).
+   - Total controle: Instala Nginx, Gunicorn e SSL (Certbot).
+   - Preço fixo (a partir de $4-5/mês).
+   - Mais complexo, mas é a solução mais profissional e escalável.
+
+4. Cloudflare Tunnel (Self-Hosting):
+   - Rodar o site no seu próprio computador ou em um Raspberry Pi.
+   - O Cloudflare Tunnel expõe seu PC local para a internet de forma segura.
+   - Gratuito (exceto o custo do domínio).
+   - Requer que seu PC fique ligado 24h.
