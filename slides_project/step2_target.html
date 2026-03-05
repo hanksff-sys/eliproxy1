@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      *{box-sizing:border-box}
+      body{margin:0}
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        color: #64748B;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-area {
+        padding-top: 60px; /* keep upper padding of the title */
+        padding-left: 80px;
+      }
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        color: #1E293B;
+        margin-bottom: 10px;
+      }
+      .accent-line {
+        width: 100px;
+        height: 6px;
+        background: #F97316;
+        margin-top: 15px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px; /* reduced gap to save vertical space where possible */
+        padding-top: 40px; /* reduced from 60px */
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .instruction-step {
+        margin-bottom: 20px; /* reduced from 35px */
+      }
+      .instruction-step h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #1E293B;
+        margin-bottom: 10px; /* reduced to tighten spacing */
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .instruction-step p {
+        font-size: 20px;
+        line-height: 1.6;
+        padding-left: 40px;
+        margin:0;
+      }
+      .example-box {
+        background: #F8FAFC;
+        border: 1px solid #E2E8F0;
+        padding-top: 20px; /* reduced from 40px */
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .example-label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #64748B;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+      }
+      .target-code {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+        color: #F97316;
+        word-break: break-all;
+        background: #FFFFFF;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border: 1px solid #CBD5E1;
+        margin-bottom: 20px;
+      }
+      .tip-box {
+        margin-top: 20px; /* reduced from 40px */
+        border-top: 4px solid #F97316;
+        padding-top: 12px;
+      }
+      .tip-box strong {
+        color: #1E293B;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-area">
+            <h1>Passo 2: Obtendo o DNS Target da Hospedagem</h1>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="content-grid">
+            <div class="left-col">
+                <div class="instruction-step">
+                    <h3><i class="fas fa-plus-circle" style="color: #F97316;"></i> 1. Adicione o Domínio</h3>
+                    <p>No painel da sua hospedagem (ex: Heroku Settings), localize a seção de domínios e adicione <strong>www.eliproxy.com.br</strong>.</p>
+                </div>
+                <div class="instruction-step">
+                    <h3><i class="fas fa-search" style="color: #F97316;"></i> 2. Localize o Endereço</h3>
+                    <p>Após adicionar, o sistema gerará automaticamente um endereço de destino específico para o seu site.</p>
+                </div>
+                <div class="instruction-step">
+                    <h3><i class="fas fa-copy" style="color: #F97316;"></i> 3. Copie o Valor</h3>
+                    <p>Copie este endereço exatamente como ele aparece. Você o usará no próximo passo dentro do seu registrador de domínio.</p>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="example-box">
+                    <p class="example-label">Exemplo de DNS Target</p>
+                    <div class="target-code">
+                        eliproxy-7a2b9.herokudns.com
+                    </div>
+                    
+                    <div class="tip-box">
+                        <p style="margin:0;"><strong>Dica:</strong> Este endereço é único para o seu projeto e funciona como o "ID" do seu servidor na rede global.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

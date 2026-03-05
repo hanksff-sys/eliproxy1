@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        color: #64748B;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-area {
+        padding-top: 60px;
+        padding-left: 80px;
+      }
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        color: #1E293B;
+        margin-bottom: 10px;
+      }
+      .accent-line {
+        width: 100px;
+        height: 6px;
+        background: #F97316;
+        margin-top: 15px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        color: #1E293B;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .status-box {
+        border: 2px solid #E2E8F0;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+      }
+      .highlight {
+        color: #F97316;
+        font-weight: bold;
+      }
+      .security-badge {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #10B981;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-area">
+            <h1>Passo 6: Verificação e Certificado SSL (HTTPS)</h1>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="content-grid">
+            <div class="column">
+                <h3><i class="fas fa-search" style="color: #F97316;"></i> Teste de Acesso</h3>
+                <p>Após o período de propagação, digite seu domínio personalizado no navegador para garantir que o site <span class="highlight">Eli Proxy</span> está carregando corretamente.</p>
+                <div class="status-box">
+                    <p style="font-size: 18px;">DICA: Use uma aba anônima para evitar que o cache do navegador mostre uma versão antiga ou erro de DNS.</p>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h3><i class="fas fa-shield-alt" style="color: #10B981;"></i> Segurança Máxima</h3>
+                <p>O <span class="highlight">Certificado SSL</span> criptografa os dados entre o cliente e o servidor, ativando o protocolo HTTPS.</p>
+                <p>Hospedagens modernas como Heroku e Render configuram o SSL automaticamente para você.</p>
+                <div class="security-badge">
+                    <i class="fas fa-lock"></i> Site Seguro (HTTPS)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

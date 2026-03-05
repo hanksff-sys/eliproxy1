@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        color: #64748B;
+        position: relative;
+        top: -8px; /* shift up so total page height becomes <720px */
+        overflow: hidden;
+      }
+      .header-area {
+        padding-top: 60px; /* do not change - title spacing is important */
+        padding-left: 80px;
+      }
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        color: #1E293B;
+        margin-bottom: 10px;
+      }
+      .accent-line {
+        width: 100px;
+        height: 6px;
+        background: #F97316;
+        margin-top: 15px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px; /* slightly reduced for tighter layout */
+        padding-top: 40px; /* reduced, but header top padding preserved */
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        color: #1E293B;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+      .solution-box {
+        border: 2px solid #E2E8F0;
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 16px;
+      }
+      .highlight {
+        color: #F97316;
+        font-weight: bold;
+      }
+      .footer-warning {
+        position: absolute;
+        bottom: 60px; /* moved up to create breathing space and avoid overlap */
+        left: 80px;
+        font-size: 16px;
+        color: #F97316;
+        background: #FFF7ED;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 1080px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-area">
+            <h1>Passo 4: Configurando o domínio raiz</h1>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="content-grid">
+            <div class="column">
+                <h3><i class="fas fa-exclamation-triangle" style="color: #F97316;"></i> O Desafio</h3>
+                <p>O <span class="highlight">Domínio Raiz</span> (ex: eliproxy.com.br) não permite o uso de registros CNAME por padrão nas normas da internet.</p>
+                <p>Isso significa que você não pode simplesmente apontar o domínio principal para o endereço da hospedagem como fez com o 'www'.</p>
+            </div>
+            
+            <div class="column">
+                <h3><i class="fas fa-check-circle" style="color: #10B981;"></i> As Soluções</h3>
+                <div class="solution-box">
+                    <p><span class="highlight">Opção A: Registros ALIAS/ANAME</span></p>
+                    <p style="font-size: 18px;">Use se o seu registrador oferecer suporte. Ele simula um CNAME no domínio raiz de forma automática.</p>
+                </div>
+                <div class="solution-box">
+                    <p><span class="highlight">Opção B: Cloudflare</span></p>
+                    <p style="font-size: 18px;">A melhor solução gratuita. O recurso "CNAME Flattening" resolve o problema e ainda adiciona segurança extra.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-warning">
+            DICA: Configurar o redirecionamento do domínio raiz para o 'www' é fundamental para evitar erros de acesso dos clientes.
+        </div>
+    </div>
+</body>
+</html>

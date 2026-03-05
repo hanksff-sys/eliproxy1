@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      /* remove default body margin (was causing 8px extra) */
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px; /* must keep */
+        background: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        color: #64748B;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-area {
+        padding-top: 60px; /* upper padding must not be changed */
+        padding-left: 80px;
+      }
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        color: #1E293B;
+        margin-bottom: 10px;
+      }
+      .accent-line {
+        width: 100px;
+        height: 6px;
+        background: #F97316;
+        margin-top: 15px;
+      }
+      .content-body {
+        /* reduced top padding to save vertical space */
+        padding-top: 24px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .instruction-text {
+        font-size: 22px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #1E293B;
+      }
+      .config-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 12px;
+        font-size: 20px;
+      }
+      .config-table th {
+        background: #1E293B;
+        color: white;
+        text-align: left;
+        padding: 12px; /* reduced vertical padding */
+        font-family: 'Montserrat', sans-serif;
+      }
+      .config-table td {
+        padding: 12px; /* reduced vertical padding */
+        border: 1px solid #E2E8F0;
+        color: #1E293B;
+      }
+      .highlight-cell {
+        background: #FFF7ED;
+        font-weight: bold;
+        color: #F97316;
+      }
+      .pro-tip {
+        margin-top: 20px; /* reduced spacing */
+        padding-top: 12px;
+        border-top: 2px dashed #F97316;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 18px;
+        color: #64748B;
+      }
+      .pro-tip i {
+        color: #F97316;
+        font-size: 24px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-area">
+            <h1>Passo 3: Configurando o registro CNAME (www)</h1>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="content-body">
+            <p class="instruction-text">
+                O registro CNAME é o que permite que o endereço <span style="font-weight: bold;">www.eliproxy.com.br</span> aponte para o servidor da sua hospedagem. Acesse a zona de DNS do seu registrador e adicione:
+            </p>
+
+            <table class="config-table">
+                <thead>
+                    <tr>
+                        <th>Tipo de Registro</th>
+                        <th>Nome / Host</th>
+                        <th>Valor / Destino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CNAME</td>
+                        <td class="highlight-cell">www</td>
+                        <td>eliproxy-12345.herokudns.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pro-tip">
+                <i class="fas fa-lightbulb"></i>
+                <p>O "Valor/Destino" deve ser exatamente o <strong>DNS Target</strong> que você copiou no Passo 2 das configurações da sua hospedagem.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

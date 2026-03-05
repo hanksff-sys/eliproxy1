@@ -1,0 +1,229 @@
+/* ========================================
+   SEÇÃO VPN - ESTILOS
+   ======================================== */
+
+.vpn-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 5%;
+  background: radial-gradient(circle at 0% 0%, rgba(102, 0, 153, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 100% 100%, rgba(0, 210, 255, 0.05) 0%, transparent 50%);
+  min-height: 80vh;
+}
+
+.vpn-hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.vpn-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  animation: float-vpn 6s ease-in-out infinite;
+}
+
+@keyframes float-vpn {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.vpn-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.vpn-plan-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(102, 0, 153, 0.08);
+  border: 1px solid rgba(102, 0, 153, 0.05);
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vpn-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.vpn-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #660099, #9900cc);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.vpn-info {
+  text-align: left;
+}
+
+.vpn-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.vpn-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.vpn-features {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.vpn-features p {
+  margin-bottom: 12px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vpn-features i {
+  color: #00d2ff;
+}
+
+.vpn-price {
+  margin-bottom: 25px;
+}
+
+.vpn-price .currency {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #660099;
+}
+
+.vpn-price .price {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+}
+
+.vpn-price .period {
+  color: #666;
+}
+
+.btn-contratar-vpn {
+  display: block;
+  background: linear-gradient(135deg, #660099, #9900cc);
+  color: white;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.btn-contratar-vpn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);
+}
+
+.vpn-note {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* BENEFÍCIOS VPN */
+.vpn-benefits {
+  padding: 80px 5%;
+  background: #fcfaff;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 0, 153, 0.05);
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(102, 0, 153, 0.08);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(102, 0, 153, 0.05);
+  color: #660099;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 auto 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+  .vpn-hero {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+  
+  .vpn-hero-image {
+    order: 1;
+    margin-bottom: 30px;
+  }
+  
+  .vpn-content {
+    order: 2;
+    width: 100%;
+  }
+  
+  .vpn-plan-card {
+    padding: 25px;
+  }
+  
+  .vpn-price .price {
+    font-size: 2.5rem;
+  }
+}

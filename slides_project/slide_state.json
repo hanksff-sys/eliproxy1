@@ -1,0 +1,132 @@
+{
+  "project_info": {
+    "title": "O que é DNS e por que ele é essencial?",
+    "created": 1772372415.0691495,
+    "last_updated": 1772372725.1433814,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "intro",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "ecosystem",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "step1_registration",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "step2_target",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "step3_cname",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "step4_root_domain",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "step5_propagation",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "step6_ssl_check",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "tips_best_practices",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "conclusion",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "intro",
+      "title": "O que é DNS e por que ele é essencial?",
+      "summary": "Introdução ao conceito de DNS e sua importância para a marca Eli Proxy.",
+      "image_plan": "/home/ubuntu/upload/pasted_file_lKkgoE_WhatsAppImage2026-03-01at10.20.56.jpeg - The image shows the Eli Proxy logo, which is directly relevant to the presentation's topic.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ecosystem",
+      "title": "Domínio vs. Hospedagem: Entenda a diferença",
+      "summary": "Explicação sobre a relação entre o endereço do site e o servidor onde ele está hospedado.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "step1_registration",
+      "title": "Passo 1: Registrando seu domínio profissional",
+      "summary": "Guia prático para registro no Registro.br ou outras plataformas.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "step2_target",
+      "title": "Passo 2: Obtendo o DNS Target da Hospedagem",
+      "summary": "Como encontrar o endereço de destino gerado pelo seu servidor (ex: Heroku).",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "step3_cname",
+      "title": "Passo 3: Configurando o registro CNAME (www)",
+      "summary": "Instruções técnicas para configurar o subdomínio www no painel de DNS.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "step4_root_domain",
+      "title": "Passo 4: Configurando o domínio raiz (Apex Domain)",
+      "summary": "Como lidar com o domínio sem o 'www' usando registros ALIAS ou Cloudflare.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "step5_propagation",
+      "title": "Passo 5: O tempo de propagação do DNS",
+      "summary": "Explicação sobre o tempo necessário para as mudanças serem aplicadas globalmente.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "step6_ssl_check",
+      "title": "Passo 6: Verificação e Certificado SSL (HTTPS)",
+      "summary": "Garantindo a segurança e o cadeado verde no seu novo endereço.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "tips_best_practices",
+      "title": "Dicas de Ouro para uma configuração sem erros",
+      "summary": "Melhores práticas e erros comuns a serem evitados durante o processo.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusão: Eli Proxy pronto para o mundo!",
+      "summary": "Encerramento e próximos passos para o sucesso do site Eli Proxy.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

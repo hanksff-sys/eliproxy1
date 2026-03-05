@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eli Proxy — Internet e Streaming</title>
+  <title>Eli Proxy — Internet, Streaming e VPN</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/planos-cards.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/vpn.css') }}" />
 </head>
 <body>
 
@@ -22,6 +23,7 @@
       <ul class="nav-links">
         <li><a href="#internet">Internet</a></li>
         <li><a href="#streaming">Streaming</a></li>
+        <li><a href="#vpn">VPN</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
       <a href="https://wa.me/98988330665" target="_blank" class="nav-cta">Contratar agora</a>
@@ -37,6 +39,9 @@
       <button class="tab-btn" data-tab="streaming">
         <i class="fas fa-tv"></i> Streaming
       </button>
+      <button class="tab-btn" data-tab="vpn">
+        <i class="fas fa-shield-alt"></i> VPN
+      </button>
     </div>
   </div>
 
@@ -46,7 +51,7 @@
   <div class="tab-content active" id="internet">
 
     <!-- HERO INTERNET -->
-    <section class="hero" id="internet">
+    <section class="hero" id="internet-hero">
       <div class="hero-bg-shapes">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
@@ -285,7 +290,7 @@
               <i class="fas fa-infinity"></i>
             </div>
             <h3>Navegação Ilimitada</h3>
-            <p>Após os 500GB, continue navegando sem interrupções em velocidade reduzida, sem custo extra.</p>
+            <p>Após o consumo da franquia, continue navegando sem interrupções em velocidade reduzida.</p>
           </div>
           <div class="card-benefit">
             <div class="card-icon green">
@@ -306,7 +311,7 @@
               <i class="fas fa-headset"></i>
             </div>
             <h3>Suporte Dedicado</h3>
-            <p>Atendimento rápido e personalizado via WhatsApp, e-mail ou redes sociais.</p>
+            <p>Atendimento rápido e personalizado via WhatsApp e redes sociais.</p>
           </div>
         </div>
       </div>
@@ -324,11 +329,9 @@
           <div class="app-pill ig-pill">
             <i class="fab fa-instagram"></i> Instagram
           </div>
-
         </div>
       </div>
     </section>
-
   </div>
 
   <!-- ========================================
@@ -385,7 +388,7 @@
             </a>
           </div>
 
-            <p class="streaming-note">Teste grátis por 2 horas, sem compromisso!</p>
+          <p class="streaming-note">Teste grátis por 2 horas, sem compromisso!</p>
         </div>
       </div>
     </section>
@@ -455,7 +458,93 @@
         </div>
       </div>
     </section>
+  </div>
 
+  <!-- ========================================
+       SEÇÃO 3: VPN
+       ======================================== -->
+  <div class="tab-content" id="vpn">
+    <!-- HERO VPN -->
+    <section class="hero vpn-hero" id="vpn-section">
+      <div class="vpn-hero-image">
+        <img src="{{ url_for('static', filename='img/vpn-hero-v2.png') }}" alt="VPN Eli Proxy" class="vpn-image">
+      </div>
+      <div class="vpn-content">
+        <div class="vpn-plan-card">
+          <div class="vpn-header">
+            <div class="vpn-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="vpn-info">
+              <span class="vpn-title">Internet Ilimitada via App</span>
+              <span class="vpn-subtitle">TIM e Vivo</span>
+            </div>
+          </div>
+          <div class="vpn-features">
+            <p><i class="fas fa-check"></i> Internet ilimitada via App</p>
+              <p><i class="fas fa-check"></i> Funciona apenas em Android</p>
+            <p><i class="fas fa-check"></i> Sem limite de dados</p>
+            <p><i class="fas fa-check"></i> Sem permanência mínima</p>
+            <p><i class="fas fa-check"></i> Suporte 24h</p>
+          </div>
+          <div class="vpn-price">
+            <span class="currency">R$</span>
+            <span class="price">15,00</span>
+            <span class="period">/mês</span>
+          </div>
+          <a href="https://wa.me/98988330665" target="_blank" class="btn-contratar-vpn">
+            <i class="fab fa-whatsapp"></i> Contratar agora
+          </a>
+          <p class="vpn-note">Ativação imediata!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS VPN -->
+    <section class="vpn-benefits">
+      <div class="section-container">
+        <h2 class="section-title">Por que escolher nossa <span class="highlight">VPN</span>?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Otimizado para Mobile</h3>
+            <p>Conexão rápida e estável via App. Compatibilidade exclusiva com Android.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-infinity"></i>
+            </div>
+            <h3>Dados Ilimitados</h3>
+            <p>Navegue sem preocupação com limite de dados. Internet verdadeiramente ilimitada.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Velocidade Garantida</h3>
+            <p>Conexão rápida e estável para streaming, redes sociais e trabalho.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3>Segurança Total</h3>
+            <p>Sua conexão é protegida e criptografada em todas as redes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final VPN -->
+    <div class="cta-final vpn-cta">
+      <h3>Ative sua VPN agora!</h3>
+      <p>Aproveite internet ilimitada por apenas R$ 15,00/mês.</p>
+      <a href="https://wa.me/98988330665" target="_blank" class="btn-wpp-final">
+        <i class="fab fa-whatsapp"></i> Contratar VPN
+      </a>
+    </div>
   </div>
 
   <!-- CONTATO -->
@@ -534,7 +623,7 @@
         <span class="logo-tag">proxy</span>
       </div>
       <p class="footer-text">
-        Eli Proxy &mdash; Internet 500GB + Streaming Liberado
+        Eli Proxy &mdash; Internet Móvel, Streaming e VPN
       </p>
       <div class="footer-social">
         <a href="https://wa.me/98988330665" target="_blank"><i class="fab fa-whatsapp"></i></a>
